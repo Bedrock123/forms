@@ -143,15 +143,17 @@ Form
 .cd-form select {
   /* general style for input elements */
   padding: 12px;
-  border: 1px solid #cfd9db;
+  border: 1px solid #407498;
   background-color: #ffffff;
-
 }
 .cd-form input[type="text"]:focus,
 .cd-form input[type="email"]:focus,
 .cd-form textarea:focus,
 .cd-form select:focus {
   outline: none;
+     -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
+  -moz-transition: all 0.2s, left 0.1s, font-size 0.1s;
+  transition: all 0.2s, left 0.1s, font-size 0.1s;
 
 }
 .cd-form .cd-select {
@@ -271,9 +273,9 @@ Form
 .cd-form input[type="radio"]:checked + label::after,
 .cd-form input[type="checkbox"]:checked + label::before,
 .cd-form input[type="checkbox"]:checked + label::after {
-  -webkit-animation: cd-bounce 0.3s;
-  -moz-animation: cd-bounce 0.3s;
-  animation: cd-bounce 0.3s;
+  -webkit-animation: cd-bounce 0.2s;
+  -moz-animation: cd-bounce 0.2s;
+  animation: cd-bounce 0.2s;
 }
 .cd-form textarea {
   min-height: 200px;
@@ -331,8 +333,12 @@ Form
   .cd-form input[type="email"],
   .cd-form textarea,
   .cd-form select {
-    padding: 35px 19px 20px 19px;
+    padding: 28px 19px 16px 19px;
+    font-weight: 600;
+    color: darkgrey;
   }
+
+input#cd-name {}
 }
 
 @-webkit-keyframes cd-bounce {
@@ -388,18 +394,21 @@ FLoating labels
 }
 .js .floating-labels .icon .cd-label {
   left: 19px;
+  font-weight: 600;
 }
 .js .floating-labels .cd-label.float {
   /* move label out the input field */
   font-size: 1.5rem;
+  font-weight: 600;
   text-transform: capitalize !important;
   -webkit-transition: all 0.1s, left 0.1s, font-size 0.1s;
   -moz-transition: all 0.1s, left 0.1s, font-size 0.1s;
   transition: all 0.1s, left 0.1s, font-size 0.1s;
   background: white;
   padding: 2px;
+  color: #407498;
   top: 14px;
-  left: 15px !important
+  left: 15px !important;
 }
 @media only screen and (min-width: 600px) {
   .js .floating-labels legend + div {
@@ -407,7 +416,7 @@ FLoating labels
     margin-top: 19px;
   }
   .js .floating-labels .cd-label {
-    top: 36px;
+    top: 30px;
   }
 }
 
@@ -420,7 +429,7 @@ Nice Select
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   border-radius: 3px;
-box-shadow: 0px 0px 0px 1px#e0e7ee inset;
+  box-shadow: 0px 0px 0px 1px #407598 inset;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -436,17 +445,17 @@ box-shadow: 0px 0px 0px 1px#e0e7ee inset;
   padding-right: 30px;
   position: relative;
   text-align: left !important;
-
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   white-space: nowrap;
-  width: auto; }
+  width: auto;
+  }
 
   .nice-select:after {
-    border-bottom: 2px solid #90a1b5;
-    border-right: 2px solid #90a1b5;
+    border-bottom: 2px solid #407498;
+    border-right: 2px solid #407498;
     content: '';
     display: block;
     height: 5px;
@@ -456,14 +465,15 @@ box-shadow: 0px 0px 0px 1px#e0e7ee inset;
     right: 12px;
     top: 50%;
     -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-            transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    width: 5px; }
+    
+    width: 5px;
+    }
   .nice-select.open:after {
     -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
@@ -501,10 +511,10 @@ box-shadow: 0px 0px 0px 1px#e0e7ee inset;
       min-height: 34px; }
   .nice-select .list {
     background-color: #fff;
-    border-radius: 3px;
-    border-left: 1px solid #e0e7ee;
-    border-right: 1px solid #e0e7ee;
-    border-bottom: 1px solid #e0e7ee;
+    border-radius: 0px 0px 3px 3px;
+    border-left: 1px solid #407498;
+    border-right: 1px solid #407498;
+    border-bottom: 1px solid #407498;
     box-sizing: border-box;
     margin-top: 4px;
     opacity: 0;
@@ -515,12 +525,12 @@ box-shadow: 0px 0px 0px 1px#e0e7ee inset;
     top: 100%;
     left: 0;
     -webkit-transform-origin: 50% 0;
-        -ms-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-
-    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    z-index: 9; }
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.1s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+    }
     .nice-select .list:hover .option:not(:hover) {
       background-color: transparent !important; }
   .nice-select .option {
@@ -536,7 +546,8 @@ box-shadow: 0px 0px 0px 1px#e0e7ee inset;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-      background-color: #f6f7f9; }
+      background-color: #f3f3f3;
+      }
 
     .nice-select .option.disabled {
       background-color: transparent;
@@ -785,3 +796,10 @@ label {
   clear: both;
   font-size: 12px;
   margin-top: 90px; }
+
+.error {
+    -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
+  -moz-transition: all 0.2s, left 0.1s, font-size 0.1s;
+  transition: all 0.2s, left 0.1s, font-size 0.1s;
+  border-left: 5px solid #e90 !important;
+}
