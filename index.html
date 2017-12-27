@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
@@ -14,20 +14,27 @@
 <body>
     <form class="cd-form floating-labels">
         <fieldset>
-            <legend>Account Info</legend>
-            <div class="icon">
+            <div>
                 <label class="cd-label" for="cd-name">Name</label>
                 <input class="user" type="text" name="cd-name" id="cd-name">
+                <div class="error-box" />
             </div>
-            <div class="icon">
+            <div>
                 <label class="cd-label" for="cd-company">Company</label>
                 <input class="company" type="text" name="cd-company" id="cd-company">
+                <div class="error-box" />
+            </div>
+            <div>
+                <label class="cd-label" for="cd-company">Email</label>
+                <input class="company" type="email" name="cd-company" id="cd-company">
+                <div class="error-box" />
             </div>
             <select class="wide" >
 				<option value="1">Occupation</option>
 				<option value="2">TEchnicain</option>
 				<option value="4">CEO</option>
-			</select>
+            </select>
+        
         </fieldset>
     </form>
     <script src="js/jquery-2.1.1.js"></script>

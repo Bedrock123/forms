@@ -93,7 +93,7 @@ audio,
 video {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: 'Lato', sans-serif;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -166,7 +166,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #2b3e51;
     background-color: #ffffff;
 }
@@ -185,7 +185,7 @@ Form
 
 .cd-form {
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 4em auto;
 }
 
@@ -197,13 +197,10 @@ Form
 
 .cd-form fieldset {
     margin: 24px 0;
-}
-
-.cd-form legend {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    border-bottom: 1px solid #ecf0f1;
+    border-radius: 2px;
+    padding: 20px;
+    background: #F7F7F7;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .cd-form div {
@@ -215,7 +212,7 @@ Form
 .cd-form h4,
 .cd-form .cd-label {
     font-size: 1.3rem;
-    color: #94aab0;
+    color: #868686;
     margin-bottom: 10px;
 }
 
@@ -227,7 +224,7 @@ Form
 .cd-form textarea,
 .cd-form select,
 .cd-form label {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     color: #2b3e51;
 }
@@ -252,7 +249,7 @@ Form
 .cd-form select {
     /* general style for input elements */
     padding: 12px;
-    border: 1px solid #407498;
+    border: 1px solid #90a1b5;
     background-color: #ffffff;
 }
 
@@ -271,20 +268,6 @@ Form
     position: relative;
 }
 
-.cd-form .cd-select::after {
-    /* arrow icon for select element */
-    content: '';
-    position: absolute;
-    z-index: 1;
-    right: 19px;
-    top: 50%;
-    margin-top: -8px;
-    display: block;
-    width: 19px;
-    height: 19px;
-    background: url("../img/cd-icon-arrow.svg") no-repeat center center;
-    pointer-events: none;
-}
 
 .cd-form select {
     cursor: pointer;
@@ -444,68 +427,25 @@ Form
     transform: scale(0.9);
 }
 
-.cd-form [required] {
-    background: url("../img/cd-required.svg") no-repeat top right;
+.cd-form legend+div {
+    /* reduce margin-top for first form element after the legend */
+    margin-top: 20px;
 }
 
-
-    .cd-form legend+div {
-        /* reduce margin-top for first form element after the legend */
-        margin-top: 20px;
-    }
-    .cd-form h4,
-    .cd-form .cd-label {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-    }
-    .cd-form input[type="text"],
-    .cd-form input[type="email"],
-    .cd-form textarea,
-    .cd-form select {
-        padding: 28px 19px 16px 19px;
-        font-weight: 600;
-        color: darkgrey;
-    }
-    input#cd-name {}
-
-@-webkit-keyframes cd-bounce {
-    0%,
-    100% {
-        -webkit-transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(0.8);
-    }
+.cd-form h4,
+.cd-form .cd-label {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-@-moz-keyframes cd-bounce {
-    0%,
-    100% {
-        -moz-transform: scale(1);
-    }
-    50% {
-        -moz-transform: scale(0.8);
-    }
+.cd-form input[type="text"],
+.cd-form input[type="email"],
+.cd-form textarea,
+.cd-form select {
+    padding: 31px 19px 10px 19px;
+    font-weight: 100;
+    color: #407498;
 }
-
-@keyframes cd-bounce {
-    0%,
-    100% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-}
-
 
 /* -------------------------------- 
 
@@ -526,22 +466,19 @@ FLoating labels
     transition: all 0.1s, left 0.1s, font-size 0.1s;
 }
 
-.js .floating-labels .icon .cd-label {
-    left: 19px;
-    font-weight: 600;
-}
+
 
 .js .floating-labels .cd-label.float {
     /* move label out the input field */
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 100;
     text-transform: capitalize !important;
     -webkit-transition: all 0.1s, left 0.1s, font-size 0.1s;
     -moz-transition: all 0.1s, left 0.1s, font-size 0.1s;
     transition: all 0.1s, left 0.1s, font-size 0.1s;
     background: white;
     padding: 2px;
-    color: #407498;
+    color: #868686;
     top: 14px;
     left: 15px !important;
 }
@@ -552,7 +489,7 @@ FLoating labels
         margin-top: 19px;
     }
     .js .floating-labels .cd-label {
-        top: 26px;
+        top: 22px;
     }
 }
 
@@ -566,8 +503,8 @@ Nice Select
 .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0px 0px 0px 1px #407598 inset;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 1px #90a1b5 inset;
     box-sizing: border-box;
     clear: both;
     cursor: pointer;
@@ -576,8 +513,8 @@ Nice Select
     font-family: inherit;
     font-size: 14px;
     font-weight: normal;
-    height: 52px;
-    line-height: 40px;
+    height: 62px;
+    line-height: 50px;
     outline: none;
     padding-left: 18px;
     padding-right: 30px;
@@ -667,13 +604,16 @@ Nice Select
     line-height: 34px;
     min-height: 34px;
 }
-
+.nice-select .current {
+  color: #407498;
+  
+}
 .nice-select .list {
     background-color: #fff;
     border-radius: 0px 0px 3px 3px;
-    border-left: 1px solid #407498;
-    border-right: 1px solid #407498;
-    border-bottom: 1px solid #407498;
+    border-left: 1px solid #90a1b5;
+    border-right: 1px solid #90a1b5;
+    border-bottom: 1px solid #90a1b5;
     box-sizing: border-box;
     margin-top: 4px;
     opacity: 0;
@@ -848,7 +788,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #445870;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: -0.25px;
@@ -955,7 +895,7 @@ label.right {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-weight: 600;
+    font-weight: 100;
     height: 52px;
     line-height: 52px;
     outline: none;
@@ -1035,14 +975,27 @@ label.right {
     margin-top: 90px;
 }
 
-.error {
+.error-box {
+    position: absolute !important;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    background: #407498;
+    width: 3px;
+    top: -20px;
     -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
     -moz-transition: all 0.2s, left 0.1s, font-size 0.1s;
     transition: all 0.2s, left 0.1s, font-size 0.1s;
-    border-left: 5px solid #e90 !important;
-    padding: 28px 19px 16px 14px !important;
+}
+
+.error {
+    height: 62px;
+    background: #E34F30 !important;
+    -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
+    -moz-transition: all 0.2s, left 0.1s, font-size 0.1s;
+    transition: all 0.2s, left 0.1s, font-size 0.1s;
 }
 
 .label-error {
-    color: #e90 !important;
+    color: #E34F30 !important;
 }
