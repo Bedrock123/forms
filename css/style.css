@@ -769,12 +769,25 @@ Form
     display: block;
 }
 
+.c-form .c-label span {
+    color: #bbbbbb;
+    top: 29px;
+    display: initial;
+    vertical-align: initial;
+    bottom: 21px;
+    font-size: 12px;
+    margin-left: 1px;
+}
+
 .c-form input,
 .c-form textarea,
 .c-form select,
 .c-form label {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
     color: #2b3e51;
 }
 
@@ -1021,10 +1034,9 @@ FLoating labels
     -webkit-transition: all 0.1s, left 0.1s, font-size 0.1s;
     -o-transition: all 0.1s, left 0.1s, font-size 0.1s;
     transition: all 0.1s, left 0.1s, font-size 0.1s;
-    background: white;
     padding: 2px;
     color: #868686;
-    top: 14px;
+    top: 12px;
     left: 15px !important;
 }
 
@@ -1557,4 +1569,32 @@ label.right {
 
 .label-error {
     color: #E34F30 !important
+}
+
+.has-suggestion {
+    padding: 31px 19px 39px 19px !important;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.c-suggestion {
+    letter-spacing: 1px;
+    position: absolute;
+    top: 63px;
+    background: transparent;
+    text-transform: capitalize !important;
+    left: 19px;
+    font-size: 13px !important;
+    cursor: text;
+    color: #BFBFBF !important;
+    -webkit-transition: all 0.1s, left 0.1s, font-size 0.1s;
+    -o-transition: all 0.1s, left 0.1s, font-size 0.1s;
+    transition: all 0.1s, left 0.1s, font-size 0.1s;
+}
+
+.c-suggestion span {
+    vertical-align: initial;
+    font-weight: 800;
+    color: lightseagreen;
 }

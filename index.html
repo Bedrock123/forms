@@ -62,15 +62,16 @@
         <fieldset>
             <div>
                 <label class="c-label">Name</label>
-                <input type="text">
+                <input type="text" data-required="yes">
             </div>
             <div>
-                <label class="c-label">Company</label>
-                <input type="text" id="cd-company" name="Company">
+                <label class="c-label">Company <span>(Optional)</span></label>
+                <input type="text" id="cd-company" name="Company" data-required="no">
             </div>
             <div>
                 <label class="c-label">Email</label>
-                <input type="email">
+                <input type="email" data-required="yes" data-type="email">
+
             </div>
             <select class="wide">
 				<option value="1">Occupation</option>
