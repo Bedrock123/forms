@@ -608,6 +608,9 @@ Nice Select
 .nice-select .current {
     color: #407498;
 }
+.nice-select:focus .current{
+  color: #90a1b5;
+}
 
 .nice-select .list {
     background-color: #fff;
