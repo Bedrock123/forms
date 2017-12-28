@@ -1868,6 +1868,7 @@ Nice Select
 
 .nice-select .current {
     color: #407498;
+    font-weight: 800;
 }
 
 .nice-select:focus .current {
@@ -1945,7 +1946,7 @@ Nice Select
     height: 0px;
     background: #407498;
     width: 3px;
-    top: -20px;
+    top: 0px;
     -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
     -o-transition: all 0.2s, left 0.1s, font-size 0.1s;
     transition: all 0.2s, left 0.1s, font-size 0.1s;
@@ -1953,7 +1954,6 @@ Nice Select
 
 .error {
     height: 61px;
-    margin-top: 20px;
     background: #E34F30 !important;
     -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
     -o-transition: all 0.2s, left 0.1s, font-size 0.1s;
