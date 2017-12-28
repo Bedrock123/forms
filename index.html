@@ -101,12 +101,38 @@
                 </div>
             </div>
             <hr />
-            <select class="wide">
-                <option value="1">Occupation</option>
-                <option value="2">TEchnicain</option>
-                <option value="4">CEO</option>
-            </select>
-
+            <div class="row">
+                <div class="col-xs-9">
+                    <h3 style="margin-top: 18px;">Quantity</h3>
+                </div>
+                <div class="col-xs-3">
+                    <select class="wide">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">3</option>
+                        <option value="4">4</option>
+                        <option value="4">5</option>
+                        <option value="4">6</option>
+                        <option value="4">7</option>
+                        <option value="4">8</option>
+                        <option value="4">9</option>
+                        <option value="4">10</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-7">
+                    <h3 style="margin-top: 18px;">Deliver Every</h3>
+                </div>
+                <div class="col-xs-5">
+                    <select class="wide">
+                        <option value="1">1 Month</option>
+                        <option value="2">2 Months</option>
+                        <option value="4">3 Months</option>
+                    </select>
+                </div>
+            </div>
         </fieldset>
 
     </form>
@@ -125,13 +151,11 @@
             FastClick.attach(document.body);
         });
         $(document).ready(function() {
-            $(".to-labelauty").labelauty({
-                minimum_width: "155px",
-                icon: false
-            });
             $(".to-labelauty-icon").labelauty({
                 label: false,
-                icon: false
+                icon: false,
+                checked_label: "183",
+                unchecked_label: "183"
             });
         });
     </script>
