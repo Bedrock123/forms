@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
     // Triggers the float field per form item
     if ($('.floating-labels').length > 0) floatLabels();
-
     function floatLabels() {
         var inputFields = $('.floating-labels .c-label').next();
         inputFields.each(function() {
@@ -12,7 +11,6 @@ jQuery(document).ready(function($) {
             // Add in functionality for form based on input data attributes
             // Add in a stand
             $(this).after("<div class='error-box' />");
-
 
             checkVal(singleInput);
             $(singleInput).focus(function() {

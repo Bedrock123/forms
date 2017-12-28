@@ -761,7 +761,7 @@ Form
 .c-form h4,
 .c-form .c-label {
     font-size: 1.3rem;
-    color: #868686;
+    color: #90a1b5;
     margin-bottom: 10px;
 }
 
@@ -770,7 +770,7 @@ Form
 }
 
 .c-form .c-label span {
-    color: #bbbbbb;
+    color: #90a1b5;
     top: 29px;
     display: initial;
     vertical-align: initial;
@@ -1035,7 +1035,7 @@ FLoating labels
     -o-transition: all 0.1s, left 0.1s, font-size 0.1s;
     transition: all 0.1s, left 0.1s, font-size 0.1s;
     padding: 2px;
-    color: #868686;
+    color: #90a1b5;
     top: 12px;
     left: 15px !important;
 }
@@ -1445,7 +1445,6 @@ label {
     color: #90a1b5;
     font-size: 11px;
     margin: 0 2px 4px;
-    text-transform: uppercase;
     float: left;
 }
 
@@ -1583,7 +1582,6 @@ label.right {
     position: absolute;
     top: 63px;
     background: transparent;
-    text-transform: capitalize !important;
     left: 19px;
     font-size: 13px !important;
     cursor: text;
