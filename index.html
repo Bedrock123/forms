@@ -48,6 +48,7 @@
     <!-- CSS Style Sheets -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-labelauty.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
@@ -61,34 +62,42 @@
 
     <form class="c-form floating-labels">
         <fieldset>
-            <div>
+            <h2>Hello There.</h2>
+            <hr />
+            <div style="margin-top: 20px">
                 <label class="c-label">Name</label>
                 <input type="text" data-required="yes">
             </div>
-            <div>
+            <div style="margin-top: 20px">
                 <label class="c-label">Company
                     <span>(Optional)</span>
                 </label>
                 <input type="text" id="cd-company" name="Company" data-required="no">
             </div>
-            <div>
+            <div style="margin-top: 20px">
                 <label class="c-label">Email</label>
                 <input type="email" data-required="yes" data-type="email">
 
             </div>
+            <hr />
             <div class="row">
                 <div class="col-xs-8">
-                    <h3 style="font-weight: 800">PRODUCT ADD ON</h3>
+                    <h3 style="margin-top: 8px;">Product Add On</h3>
                 </div>
                 <div class="col-xs-4">
-                    <label style="float: right;">
-                        <input class="label__checkbox" type="checkbox" />
-                        <span class="label__text">
-                            <span class="label__check">
-                                <i class="fa fa-check icon"></i>
-                            </span>
-                        </span>
-                    </label>
+                    <div class="checkbox">
+                        <input class="to-labelauty-icon" style="float: rightl;" type="checkbox" checked/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3 style="margin-top: 8px;">Product Add On (2)</h3>
+                </div>
+                <div class="col-xs-4">
+                    <div class="checkbox">
+                        <input class="to-labelauty-icon" style="float: rightl;" type="checkbox" checked/>
+                    </div>
                 </div>
             </div>
             <hr />
@@ -98,22 +107,32 @@
                 <option value="4">CEO</option>
             </select>
 
-
         </fieldset>
+
     </form>
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/fastclick.js"></script>
+    <script src="./js/jquery-labelauty.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('select:not(.ignore)').niceSelect();
             FastClick.attach(document.body);
+        });
+        $(document).ready(function() {
+            $(".to-labelauty").labelauty({
+                minimum_width: "155px",
+                icon: false
+            });
+            $(".to-labelauty-icon").labelauty({
+                label: false,
+                icon: false
+            });
         });
     </script>
 </body>
