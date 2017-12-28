@@ -47,8 +47,10 @@ jQuery(document).ready(function($) {
                         singleInput.after('<label class="c-suggestion">Did you mean: <span>zach@babson.edu</span></label>')
                     }
                 } else {
-                    singleInput.removeClass('has-suggestion')
-                    $(".c-suggestion").remove();
+                    if ($(this).attr("data-type") == "email") {
+                        singleInput.removeClass('has-suggestion')
+                        $(".c-suggestion").remove();
+                    }
                 }
             });
         });
