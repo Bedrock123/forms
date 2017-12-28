@@ -40,8 +40,9 @@ input.labelauty+label {
     display: table;
     font-size: 11px;
     padding: 6px;
-    background-color: #efefef;
+    background-color: #fff;
     color: #b3b3b3;
+    border: 1px solid #d6d6d6;
     cursor: pointer;
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
@@ -96,8 +97,12 @@ input.labelauty+label>span.labelauty-checked-image+span.labelauty-checked {
 /* When not Checked */
 
 input.labelauty:not(:checked):not([disabled])+label:hover {
-    background-color: #eaeaea;
+    background-color: #fff;
     color: #a7a7a7;
+    -webkit-box-shadow: 0px 0px 0px 1px #407498 inset;
+    box-shadow: 0px 0px 0px 1px #407498 inset;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 input.labelauty:not(:checked)+label>span.labelauty-checked-image {
