@@ -860,6 +860,7 @@ section {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+
 }
 
 
@@ -1444,7 +1445,6 @@ audio,
 video {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -1516,7 +1516,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
     color: #2b3e51;
     background-color: #ffffff;
 }
@@ -1529,7 +1529,7 @@ a {
 
 /* -------------------------------- 
 
-Global Styles
+Cleancult Global Styles
 
 -------------------------------- */
 
@@ -1538,12 +1538,25 @@ h1 {}
 h2 {
     color: #407498;
     font-weight: 100;
-    font-size: 20px;
+    height: 40px;
+    letter-spacing: 0.9px;
+    text-align: left;
+    text-decoration: none solid rgb(38, 54, 69);
+    width: 300px;
+    column-rule-color: rgb(38, 54, 69);
+    perspective-origin: 150px 20px;
+    transform-origin: 150px 20px;
+    caret-color: rgb(38, 54, 69);
+    border: 0px none rgb(38, 54, 69);
+    font: normal normal 500 normal 28px / 40px brandon-grotesque, "Brandon Grotesque", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    outline: rgb(38, 54, 69) none 0px;
 }
 
 h3 {
     color: #407498;
     font-weight: 100;
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
 }
 
 h4 {}
@@ -1555,7 +1568,7 @@ h6 {}
 
 /* -------------------------------- 
 
-Form
+Form Styles
 
 -------------------------------- */
 
@@ -1610,7 +1623,7 @@ Form
 .c-form textarea,
 .c-form select,
 .c-form label {
-    font-family: 'Lato', sans-serif;
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
     font-size: 1.6rem;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
@@ -1697,7 +1710,7 @@ Form
 .c-form textarea,
 .c-form select {
     padding: 31px 19px 10px 19px;
-    font-weight: 800;
+    font-weight: 500;
     color: #407498;
 }
 
@@ -1719,6 +1732,22 @@ FLoating labels
     -webkit-transition: all 0.1s, left 0.1s, font-size 0.1s;
     -o-transition: all 0.1s, left 0.1s, font-size 0.1s;
     transition: all 0.1s, left 0.1s, font-size 0.1s;
+
+
+    bottom: 30px;
+    color: rgb(134, 134, 134);
+    display: block;
+    height: 24px;
+    left: 20px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    text-decoration: none solid rgb(134, 134, 134);
+    column-rule-color: rgb(134, 134, 134);
+    caret-color: rgb(134, 134, 134);
+    border: 0px none rgb(134, 134, 134);
+    font: normal normal 500 normal 13px / 24px museo-sans, "Museo Sans", Helvetica, Arial, sans-serif;
+    outline: rgb(134, 134, 134) none 0px;
+
 }
 
 .js .floating-labels .c-label.float {
@@ -1732,7 +1761,20 @@ FLoating labels
     padding: 2px;
     color: #90a1b5;
     top: 12px;
-    left: 15px !important;
+    left: 17px !important;
+    bottom: 30px;
+    color: rgb(134, 134, 134);
+    display: block;
+    height: 24px;
+    left: 20px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    text-decoration: none solid rgb(134, 134, 134);
+    column-rule-color: rgb(134, 134, 134);
+    caret-color: rgb(134, 134, 134);
+    border: 0px none rgb(134, 134, 134);
+    font: normal normal 500 normal 13px / 24px museo-sans, "Museo Sans", Helvetica, Arial, sans-serif;
+    outline: rgb(134, 134, 134) none 0px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1748,7 +1790,7 @@ FLoating labels
 
 /* -------------------------------- 
 
-Nice Select
+Nice Select Styles
 
 -------------------------------- */
 
@@ -1868,7 +1910,7 @@ Nice Select
 
 .nice-select .current {
     color: #407498;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .nice-select:focus .current {
@@ -1906,7 +1948,7 @@ Nice Select
 
 .nice-select .option {
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 40px;
     list-style: none;
     min-height: 40px;
@@ -1953,7 +1995,7 @@ Nice Select
 }
 
 .error {
-    height: 61px;
+    height: 65px;
     background: #E34F30 !important;
     -webkit-transition: all 0.2s, left 0.1s, font-size 0.1s;
     -o-transition: all 0.2s, left 0.1s, font-size 0.1s;
@@ -1991,8 +2033,11 @@ Nice Select
     color: lightseagreen;
 }
 
+/* -------------------------------- 
 
-/* Check Boxes */
+Check Box Styles
+
+-------------------------------- */
 
 input[type=checkbox] {
     display: none;
@@ -2031,29 +2076,6 @@ input[type=checkbox]:checked+label:before {
 input[type=checkbox]:checked+label:before {
     letter-spacing: 5px;
     display: none;
-}
-
-
-/* allow space for check mark */
-
-
-/*
- * LABELAUTY jQuery Plugin
- * Styles of LABELAUTY website
- *
- * @author: Francisco Neves (@fntneves)
- * @website: www.francisconeves.com
- */
-
-
-/* Custom Fonts */
-
-@font-face {
-    font-family: 'open_sans_lightregular';
-    src: url('../fonts/opensans-light-webfont.eot');
-    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-light-webfont.woff') format('woff'), url('../fonts/opensans-light-webfont.ttf') format('truetype'), url('../fonts/opensans-light-webfont.svg#open_sans_lightregular') format('svg');
-    font-weight: 800;
-    font-style: normal;
 }
 
 
@@ -2130,58 +2152,163 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     background-image: url(../images/input-disabled.png );
 }
 
-a.button {
-    display: table;
-    font-size: 12px;
-    background-color: #3498db;
-    text-align: center;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 15px 25px;
-    color: #FFF;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    transition: background-color 0.25s;
-    -moz-transition: background-color 0.25s;
-    -webkit-transition: background-color 0.25s;
-    -o-transition: background-color 0.25s;
-}
-
-a.button:hover {
-    background-color: #72c5fd;
-}
-
-a.button:active {
-    background-color: #2a89c9;
-}
-
 .checkbox label {
     float: right !important;
 }
 
+
+
+.product-listing-header {
+    color: rgb(102, 102, 102);
+    height: 24px;
+    letter-spacing: 2px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-transform: uppercase;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 39.5469px 12px;
+    transform-origin: 39.5469px 12px;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 700 normal 13px / 24px brandon-grotesque, "Brandon Grotesque", Helvetica, Arial, sans-serif;
+    outline: rgb(102, 102, 102) none 0px;
+
+    
+    
+}
 /* Stolen Shit */
-#A_1 {
-    box-sizing: border-box;
+#BUTTON_1 {
     color: rgb(255, 255, 255);
-    display: inline-block;
-    height: 49px;
-    letter-spacing: 2.5px;
-    text-align: center;
+    cursor: pointer;
+    height: 51px;
+    letter-spacing: 2.56px;
+    min-height: 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-transform: uppercase;
-    width: 211.375px;
+    min-width: 304px;
+    width: 100%;
     column-rule-color: rgb(255, 255, 255);
-    perspective-origin: 105.688px 24.5px;
-    transform-origin: 105.688px 24.5px;
+    perspective-origin: 152px 25.5px;
+    transform-origin: 152px 25.5px;
     caret-color: rgb(255, 255, 255);
     background: rgb(227, 79, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 1px solid rgb(227, 79, 48);
+    border: 0px none rgb(255, 255, 255);
     border-radius: 5px 5px 5px 5px;
-    font: normal normal 700 normal 16px / 23px brandon-grotesque, "Brandon Grotesque", Helvetica, Arial, sans-serif;
-    margin: 26px 0px 0px;
+    font: normal normal 700 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
     outline: rgb(255, 255, 255) none 0px;
-    padding: 12px 45px;
-    transition: border-color 0.2s ease 0s, background-color 0.2s ease 0s, color 0.2s ease 0s;
-}/*#A_1*/
+    padding: 14px 0px;
+    transition: background-color 0.2s ease 0s;
+}/*#BUTTON_1*/
+
+
+
+#DIV_4 {
+    bottom: 0px;
+    color: rgb(146, 146, 146);
+    height: 40px;
+    left: 0px;
+    float: right;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(146, 146, 146);
+    top: 0px;
+    column-rule-color: rgb(146, 146, 146);
+    perspective-origin: 61px 20px;
+    transform-origin: 61px 20px;
+    caret-color: rgb(146, 146, 146);
+    border: 0px none rgb(146, 146, 146);
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
+    outline: rgb(146, 146, 146) none 0px;
+    padding: 0px 36px;
+}/*#DIV_4*/
+
+#SPAN_5 {
+    background-position: -99px 0px;
+    bottom: -6px;
+    color: rgb(146, 146, 146);
+    display: block;
+    height: 26px;
+    left: 0px;
+    position: absolute;
+    right: 96px;
+    text-decoration: none solid rgb(146, 146, 146);
+    top: 20px;
+    width: 26px;
+    column-rule-color: rgb(146, 146, 146);
+    perspective-origin: 13px 13px;
+    transform: matrix(1, 0, 0, 1, 0, -13);
+    transform-origin: 13px 13px;
+    caret-color: rgb(146, 146, 146);
+    background: rgba(0, 0, 0, 0) url("https://www.harrys.com/assets/pdp_sprite@2x-6db2dc6468e6ec606f66ef37f8dfb4b6063ef886637928ea3d9356a1e7819b86.png") no-repeat scroll -99px 0px / 239px 80px padding-box border-box;
+    border: 0px none rgb(146, 146, 146);
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
+    outline: rgb(146, 146, 146) none 0px;
+}/*#SPAN_5*/
+
+#SPAN_6, #SPAN_9 {
+    color: rgb(146, 146, 146);
+    display: inline-block;
+    height: 0px;
+    text-decoration: none solid rgb(146, 146, 146);
+    width: 0px;
+    column-rule-color: rgb(146, 146, 146);
+    caret-color: rgb(146, 146, 146);
+    border: 0px none rgb(146, 146, 146);
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
+    outline: rgb(146, 146, 146) none 0px;
+}/*#SPAN_6, #SPAN_9*/
+
+#INPUT_7 {
+    color: rgb(85, 85, 85);
+    display: block;
+    float: left;
+    height: 40px;
+    letter-spacing: 1.43px;
+    text-align: center;
+    text-decoration: none solid rgb(85, 85, 85);
+    width: 50px;
+    column-rule-color: rgb(85, 85, 85);
+    perspective-origin: 25px 20px;
+    transform-origin: 25px 20px;
+    caret-color: rgb(85, 85, 85);
+    border: 1px solid rgb(207, 207, 207);
+    font: normal normal 300 normal 13px / 21.2px museo-sans, "Museo Sans", Helvetica, Arial, sans-serif;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 0px;
+}/*#INPUT_7*/
+
+#SPAN_8 {
+    background-position: -126px 0px;
+    bottom: -6px;
+    color: rgb(146, 146, 146);
+    display: block;
+    height: 26px;
+    left: 96px;
+    position: absolute;
+    right: 0px;
+    text-decoration: none solid rgb(146, 146, 146);
+    top: 20px;
+    width: 26px;
+    column-rule-color: rgb(146, 146, 146);
+    perspective-origin: 13px 13px;
+    transform: matrix(1, 0, 0, 1, 0, -13);
+    transform-origin: 13px 13px;
+    caret-color: rgb(146, 146, 146);
+    background: rgba(0, 0, 0, 0) url("https://www.harrys.com/assets/pdp_sprite@2x-6db2dc6468e6ec606f66ef37f8dfb4b6063ef886637928ea3d9356a1e7819b86.png") no-repeat scroll -126px 0px / 239px 80px padding-box border-box;
+    border: 0px none rgb(146, 146, 146);
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
+    outline: rgb(146, 146, 146) none 0px;
+}/*#SPAN_8*/
+
+#SPAN_10 {
+    color: rgb(146, 146, 146);
+    display: inline-block;
+    height: 0px;
+    text-decoration: none solid rgb(146, 146, 146);
+    width: 0px;
+    column-rule-color: rgb(146, 146, 146);
+    caret-color: rgb(146, 146, 146);
+    border: 0px none rgb(146, 146, 146);
+    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
+    outline: rgb(146, 146, 146) none 0px;
+}/*#SPAN_10*/
 
