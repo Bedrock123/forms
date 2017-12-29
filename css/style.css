@@ -2159,3 +2159,29 @@ a.button:active {
 .checkbox label {
     float: right !important;
 }
+
+/* Stolen Shit */
+#A_1 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 49px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 211.375px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 105.688px 24.5px;
+    transform-origin: 105.688px 24.5px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(227, 79, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(227, 79, 48);
+    border-radius: 5px 5px 5px 5px;
+    font: normal normal 700 normal 16px / 23px brandon-grotesque, "Brandon Grotesque", Helvetica, Arial, sans-serif;
+    margin: 26px 0px 0px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 12px 45px;
+    transition: border-color 0.2s ease 0s, background-color 0.2s ease 0s, color 0.2s ease 0s;
+}/*#A_1*/
+
