@@ -2224,7 +2224,7 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     padding: 0px 36px;
 }/*#DIV_4*/
 
-#SPAN_5 {
+.quantity-left {
     background-position: -99px 0px;
     bottom: -6px;
     color: rgb(146, 146, 146);
@@ -2232,6 +2232,7 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     height: 26px;
     left: 0px;
     position: absolute;
+    cursor: pointer;
     right: 96px;
     text-decoration: none solid rgb(146, 146, 146);
     top: 20px;
@@ -2245,22 +2246,13 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     border: 0px none rgb(146, 146, 146);
     font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
     outline: rgb(146, 146, 146) none 0px;
-}/*#SPAN_5*/
+}/*#quantity-left*/
+.quantity-left:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0) url("https://www.harrys.com/assets/pdp_sprite@2x-6db2dc6468e6ec606f66ef37f8dfb4b6063ef886637928ea3d9356a1e7819b86.png") no-repeat scroll -99px -26px / 239px 80px padding-box border-box;
+}/*#SPAN_8*/
 
-#SPAN_6, #SPAN_9 {
-    color: rgb(146, 146, 146);
-    display: inline-block;
-    height: 0px;
-    text-decoration: none solid rgb(146, 146, 146);
-    width: 0px;
-    column-rule-color: rgb(146, 146, 146);
-    caret-color: rgb(146, 146, 146);
-    border: 0px none rgb(146, 146, 146);
-    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
-    outline: rgb(146, 146, 146) none 0px;
-}/*#SPAN_6, #SPAN_9*/
-
-#INPUT_7 {
+.quantity-container input[type="text"] {
     color: rgb(85, 85, 85);
     display: block;
     float: left;
@@ -2279,7 +2271,7 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     padding: 0px;
 }/*#INPUT_7*/
 
-#SPAN_8 {
+.quantity-right {
     background-position: -126px 0px;
     bottom: -6px;
     color: rgb(146, 146, 146);
@@ -2287,6 +2279,7 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     height: 26px;
     left: 96px;
     position: absolute;
+    cursor: pointer;
     right: 0px;
     text-decoration: none solid rgb(146, 146, 146);
     top: 20px;
@@ -2301,18 +2294,8 @@ input.labelauty.disabled-icon+label>span.labelauty-checked-image {
     font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
     outline: rgb(146, 146, 146) none 0px;
 }/*#SPAN_8*/
-
-#SPAN_10 {
-    color: rgb(146, 146, 146);
-    display: inline-block;
-    height: 0px;
-    text-decoration: none solid rgb(146, 146, 146);
-    width: 0px;
-    column-rule-color: rgb(146, 146, 146);
-    caret-color: rgb(146, 146, 146);
-    border: 0px none rgb(146, 146, 146);
-    font: normal normal 400 normal 16px / normal brandon-grotesque, "Brandon Grotesque", sans-serif;
-    outline: rgb(146, 146, 146) none 0px;
-}/*#SPAN_10*/
-
+.quantity-right:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0) url("https://www.harrys.com/assets/pdp_sprite@2x-6db2dc6468e6ec606f66ef37f8dfb4b6063ef886637928ea3d9356a1e7819b86.png") no-repeat scroll -126px -26px / 239px 80px padding-box border-box;
+}/*#SPAN_8*/
 
